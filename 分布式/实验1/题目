@@ -1,0 +1,9 @@
+Socket编程作业：
+在Linux系统上，用C++编两个程序：Client和Server。两个进程间利用socket进行TCP通信。
+要求：
+Server进程运行后，输出本进程所在主机IP地址以及正在监听的端口号；
+Client进程运行后，输出提示信息，要求用户输入Server的IP地址和端口号；
+Client以用户输入的参数连接到Server；
+Client提示用户输入任意字符串，将该字符串通过socket传输至Server；
+Server将接收到的字符串打印输出至标准输出。
+请提供上述Client和Server两个程序的源程序和可执行文件，打包后以学号命名，提交作业。
