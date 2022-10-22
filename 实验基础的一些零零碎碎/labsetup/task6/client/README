@@ -1,0 +1,34 @@
+*************************************************************************
+* client.c vpn client program via TLS with user authentication 
+*************************************************************************
+
+--------------------------
+To compile the program: 
+--------------------------
+$ make 
+
+
+--------------------------
+To run the client: 
+--------------------------
+
+First make sure you have CA certificates in ca_client 
+
+You will also need to link .pem with its hash:
+
+$ openssl x509 -in ca-cert.pem -noout -subject_hash
+9b58639a
+$ ln -s ca-cert.pem 9b58639a.0
+
+make sure that the server hostname is matched to IP in /etc/hosts
+
+vim  /etc/hosts
+
+server_IP    server hostname
+
+
+$ sudo ./client [server hostname] [server port]
+
+Then in new terminal configure routing
+
+$ ./inic
