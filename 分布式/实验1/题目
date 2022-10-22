@@ -6,4 +6,4 @@ Client进程运行后，输出提示信息，要求用户输入Server的IP地址
 Client以用户输入的参数连接到Server；
 Client提示用户输入任意字符串，将该字符串通过socket传输至Server；
 Server将接收到的字符串打印输出至标准输出。
-请提供上述Client和Server两个程序的源程序和可执行文件，打包后以学号命名，提交作业。
+
