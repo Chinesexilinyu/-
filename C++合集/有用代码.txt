@@ -1,0 +1,105 @@
+1.void CMainDlg::AddPicture()
+{
+	CBitmap bitmap;
+	bitmap.LoadBitmap(IDB_MAINPICTURE);
+	CStatic *p=(CStatic*)GetDlgItem(IDC_STATIC);
+	p->ModifyStyle(0xf,SS_BITMAP|SS_CENTERIMAGE);
+	p->SetBitmap(bitmap);
+	BITMAP bmpInfo;
+	bitmap.GetBitmap(&bmpInfo);
+	CDC dcMemory;
+	CDC*pDC=GetDlgItem(IDC_STATIC)->GetDC();
+	dcMemory.CreateCompatibleDC(pDC);
+	CBitmap*poldBitmap=dcMemory.SelectObject(&bitmap);
+	CRect rect;
+	m_ctrlPic.GetClientRect(&rect);
+	nX=rect.left+(rect.Width()-bmpInfo.bmWidth)/2;
+	nY=rect.top+(rect.Height()-bmpInfo.bmHeight)/2;
+	pDC->SetStretchBltMode(COLORONCOLOR);
+	pDC->StretchBlt(0,0,rect.Width(),rect.Height(),&dcMemory,0,0,bmpInfo.bmWidth,bmpInfo.bmHeight,SRCCOPY);
+	dcMemory.SelectObject(pOldBitmap);
+	ReleaseDC(pDC);
+}
+3.	PlaySoundA(TEXT("E:\\qu.wav"),NULL,SND_FILENAME|SND_ASYNC);
+
+
+2.		//CDialog::OnPaint();
+		CPaintDC dc(this);
+		CRect rect;
+		GetClientRect(&rect);
+		CDC dcMem;
+		dcMem.CreateCompatibleDC(&dc);
+		CBitmap bmpBackground;
+		bmpBackground.LoadBitmap(IDB_BITMAP2);
+		BITMAP bitmap;
+		bmpBackground.GetBitmap(&bitmap);
+		CBitmap *pbmpOld=dcMem.SelectObject(&bmpBackground);
+		dc.StretchBlt(0,0,rect.Width(),rect.Height(),&dcMem,0,0,bitmap.bmWidth,bitmap.bmHeight,SRCCOPY);
+4.PlaySound((LPCTSTR)IDR_WAVE1,AfxGetInstanceHandle(),SND_RESOURCE|SND_ASYNC);
+5.#include<mmsystem.h>
+#pragma comment(lib,"Winmm.lib")
+6. #include <mmsystem.h> 
+ #pragma comment( lib, "Winmm.lib" ) 
+PlaySound函数的声明为：  
+ BOOL PlaySound(LPCSTR pszSound, HMODULE hmod,DWORD fdwSound);  
+第一种方法是直接播出声音文件，相应的代码为：  
+ PlaySound("c:\\win95\\media\\The Microsoft Sound.wav", NULL, SND_FILENAME | SND_ASYNC);  
+ 注意参数中的路径使用两个连续的反斜杠转义代表一个反斜杠。    
+
+第二种方法是把声音文件加入到资源中，然后从资源中播放声音。
+Visual C++支持WAVE型资源，用户在资源视图中单击鼠标右键并选择Import命令，然后在文件选择对话框中选择The Microsoft Sound.wav文件，则该文件就会被加入到WAVE资源中。
+
+假定声音资源的ID为IDR_STARTWIN，则下面的调用同样会输出启动声音：   
+
+PlaySound((LPCTSTR)IDR_STARTWIN, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);  
+
+
+ 第三种方法是用PlaySound播放系统声音，Windows启动的声音是由SystemStart定义的系统声音，因此可以用下面的方法播放启动声音：  PlaySound("SystemStart",NULL,SND_ALIAS|SND_ASYNC);  
+
+ 函数sndPlaySound的功能与PlaySound类似，但少了一个参数。
+
+函数的声明为：  BOOL sndPlaySound(LPCSTR lpszSound, UINT fuSound);  
+
+ 除了不能指定资源名字外，参数lpszSound与PlaySound的是一样的。
+
+参数fuSound是如何播放声音的标志，可以是SND_ASYNC、SND_LOOP、SND_MEMORY、SND_NODEFAULT、SND_NOSTOP和SND_SYNC的组合，这些标志的含义与PlaySound的一样。 
+
+ 第四种方法：  sndPlaySound不能直接播放声音资源。
+
+要用该函数播放WAVE文件，可按下面的方式调用：  
+
+sndPlaySound(“MYSOUND.WAV”,SND_ASYNC); 
+
+自己把资源添在Debug文件夹里
+
+7.PlaySound(NULL, NULL, SND_PURGE) ;
+SND_PURGE
+停止所有与调用任务有关的声音。若参数pszSound为NULL，就停止所有的声音，否则，停止pszSound指定的声音。
+8.MFC-GDI+初始化
+
+
+
+
+
+
+1.在头文件中包含GDI+头文件和导入GDI+库
+
+#include <gdiplus.h>
+#pragma comment(lib,"gdiplus.lib")
+1
+2
+2.定义两个成员变量
+
+    Gdiplus::GdiplusStartupInput m_GdiplusStarupInput;
+	ULONG_PTR m_uGdiplusToken;
+1
+2
+3.在构造函数中初始化GDI+
+
+Gdiplus::GdiplusStartup(&m_uGdiplusToken, &m_GdiplusStarupInput, nullptr);
+1
+4.在不需要GDI+的时候卸载它
+
+Gdiplus::GdiplusShutdown(m_uGdiplusToken);
+1
+闲麻烦可以用using namespace Gdiplus;但是最后不要滥用。
