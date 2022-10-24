@@ -1,0 +1,110 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 吉利 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/吉利.res" /d "_DEBUG" /d "_AFXDLL" "E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\吉利.rc"" 
+Creating temporary file "C:\Users\86181\AppData\Local\Temp\RSPFA9B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/吉利.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\Error1Dlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\Error2Dlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\GambleRuleDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\GrambleGameDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\GuessgameDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\GuessRuleDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\LogonDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\LosserDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\MainDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\MainWorkDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\Math24_WrongDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\MathGameDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\MathgameRuleDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\NoWinnerDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\Password_InconsistentDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\PlayerDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\RecordDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\REGISTER_TO_MAINDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\WinnerDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\WorkerDlg.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\吉利.cpp"
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\吉利Dlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\86181\AppData\Local\Temp\RSPFA9B.tmp" 
+Creating temporary file "C:\Users\86181\AppData\Local\Temp\RSPFA9C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/吉利.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\视屏音频\SEU_做MFC的网安材料人\给戈老师的礼物\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\86181\AppData\Local\Temp\RSPFA9C.tmp" 
+Creating temporary file "C:\Users\86181\AppData\Local\Temp\RSPFA9D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/吉利.pdb" /debug /machine:I386 /out:"Debug/吉利.exe" /pdbtype:sept 
+".\Debug\Error1Dlg.obj"
+".\Debug\Error2Dlg.obj"
+".\Debug\GambleRuleDlg.obj"
+".\Debug\GrambleGameDlg.obj"
+".\Debug\GuessgameDlg.obj"
+".\Debug\GuessRuleDlg.obj"
+".\Debug\LogonDlg.obj"
+".\Debug\LosserDlg.obj"
+".\Debug\MainDlg.obj"
+".\Debug\MainWorkDlg.obj"
+".\Debug\Math24_WrongDlg.obj"
+".\Debug\MathGameDlg.obj"
+".\Debug\MathgameRuleDlg.obj"
+".\Debug\NoWinnerDlg.obj"
+".\Debug\Password_InconsistentDlg.obj"
+".\Debug\PlayerDlg.obj"
+".\Debug\RecordDlg.obj"
+".\Debug\REGISTER_TO_MAINDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WinnerDlg.obj"
+".\Debug\WorkerDlg.obj"
+".\Debug\吉利.obj"
+".\Debug\吉利Dlg.obj"
+".\Debug\吉利.res"
+]
+Creating command line "link.exe @C:\Users\86181\AppData\Local\Temp\RSPFA9D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Error1Dlg.cpp
+Error2Dlg.cpp
+GambleRuleDlg.cpp
+GrambleGameDlg.cpp
+GuessgameDlg.cpp
+GuessRuleDlg.cpp
+LogonDlg.cpp
+LosserDlg.cpp
+MainDlg.cpp
+MainWorkDlg.cpp
+Math24_WrongDlg.cpp
+MathGameDlg.cpp
+MathgameRuleDlg.cpp
+NoWinnerDlg.cpp
+Password_InconsistentDlg.cpp
+PlayerDlg.cpp
+RecordDlg.cpp
+REGISTER_TO_MAINDlg.cpp
+WinnerDlg.cpp
+WorkerDlg.cpp
+Generating Code...
+Compiling...
+吉利.cpp
+吉利Dlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+吉利.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

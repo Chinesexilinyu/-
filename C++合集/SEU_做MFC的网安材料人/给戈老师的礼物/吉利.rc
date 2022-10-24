@@ -1,0 +1,658 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\吉利.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\吉利.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 吉利"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "吉利 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2021",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 356, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "吉利"
+FONT 14, "楷体"
+BEGIN
+    PUSHBUTTON      "登录",IDC_LOGON,126,70,100,33
+    PUSHBUTTON      "注册",IDC_RECORD,127,118,100,31
+    CTEXT           "Welcome To SEU Nightmare",IDC_STATIC,7,19,342,52,
+                    SS_CENTERIMAGE
+END
+
+IDD_2_LOGON DIALOG DISCARDABLE  0, 0, 181, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "玩家",IDC_PLAYER,64,52,50,14
+    PUSHBUTTON      "管理员",IDC_WORKER,64,77,50,14
+END
+
+IDD_2_RECORD DIALOG DISCARDABLE  0, 0, 359, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,198,151,50,14
+    LTEXT           "用户名称",IDC_STATIC,110,58,35,14
+    LTEXT           "密码",IDC_STATIC,127,89,17,8
+    LTEXT           "请再次输入密码",IDC_STATIC,89,114,57,8
+    PUSHBUTTON      "确认",IDC_BUTTON1,126,152,50,14
+    EDITTEXT        IDC_NAME,160,54,64,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Password1,161,83,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Password2,160,112,65,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_3_PLAYERLOGON DIALOG DISCARDABLE  0, 0, 285, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "玩家登录"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,146,115,50,14
+    EDITTEXT        IDC_NAME,130,49,61,14,ES_AUTOHSCROLL
+    LTEXT           "账号",IDC_STATIC,94,50,24,13
+    EDITTEXT        IDC_PASSWORD,130,81,62,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,94,80,25,12
+    PUSHBUTTON      "确认",IDC_RIGHT,82,115,50,14
+END
+
+IDD_3_WORKERLOGON DIALOG DISCARDABLE  0, 0, 209, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员登录"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,108,113,50,14
+    LTEXT           "账号",IDC_STATIC,64,54,17,8
+    EDITTEXT        IDC_NAME,87,52,66,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,63,86,17,8
+    EDITTEXT        IDC_PASSWORD,87,82,65,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_RIGHT,43,114,50,14
+END
+
+IDD_ERROR1_G1320218 DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "错误"
+FONT 15, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,66,72,50,14
+    CTEXT           "您的账号或密码输入错误!",IDC_STATIC,45,37,103,23,
+                    SS_CENTERIMAGE
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 333, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "主菜单"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,140,177,50,14
+    CTEXT           "石头剪刀布",IDC_GUESS,7,19,56,27,SS_CENTERIMAGE
+    PUSHBUTTON      "开始游戏",IDC_GUESSON,7,49,50,14
+    CTEXT           "巧算24",IDC_STATIC,78,26,39,18,SS_CENTERIMAGE
+    PUSHBUTTON      "开始游戏",IDC_MATHON,70,48,50,14
+    CTEXT           "掷骰子",IDC_STATIC,139,25,48,16,SS_CENTERIMAGE
+    PUSHBUTTON      "开始游戏",IDC_GAMBLE,138,46,50,14
+    PUSHBUTTON      "关闭音乐",IDC_MUSICOFF1,276,7,50,14
+    PUSHBUTTON      "重启音乐",IDC_MUSICON1,276,24,50,14
+END
+
+IDD_ERROR2_G1320218 DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "错误"
+FONT 15, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,66,72,50,14
+    CTEXT           "您的账号输入有问题！",IDC_STATIC,43,23,99,46,
+                    SS_CENTERIMAGE
+END
+
+IDD_MAINWORK DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工作界面"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+END
+
+IDD_GUESSGAME DIALOG DISCARDABLE  0, 0, 304, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "石头剪刀布"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,247,177,50,14
+    CONTROL         139,IDC_STATIC,"Static",SS_BITMAP,125,44,40,40
+    EDITTEXT        IDC_YOURS,45,116,57,29,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPUTERS,190,117,54,27,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "vs",IDC_STATIC,124,116,45,27,SS_NOTIFY | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER
+    CTEXT           "你的出拳",IDC_STATIC,40,90,65,20,SS_CENTERIMAGE
+    PUSHBUTTON      "开始",IDC_GOON,122,177,50,14
+    PUSHBUTTON      "开始音乐",IDC_MUSICON1,247,7,50,14
+    PUSHBUTTON      "关闭音乐",IDC_MUSICOFF1,247,22,50,14
+    PUSHBUTTON      "游戏规则",IDC_RULE,120,7,50,14
+END
+
+IDD_MATHGAME_G1320218 DIALOG DISCARDABLE  0, 0, 334, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "巧算24"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,270,201,50,14
+    EDITTEXT        IDC_EDIT1,54,61,41,22,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,132,62,48,25,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,54,109,42,25,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,133,108,48,27,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,55,154,44,25,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,133,153,51,27,ES_AUTOHSCROLL
+    CONTROL         "+",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    102,53,34,8
+    CONTROL         "-",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,102,61,22,11
+    CONTROL         "*",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,103,73,27,8
+    CONTROL         "/",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,103,84,18,10
+    CONTROL         "+",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    105,106,23,8
+    CONTROL         "-",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,105,116,18,10
+    CONTROL         "*",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,104,126,19,10
+    CONTROL         "/",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,104,138,18,10
+    CONTROL         "+",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    106,153,20,10
+    CONTROL         "-",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,106,162,18,
+                    10
+    CONTROL         "*",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,106,172,19,
+                    10
+    CONTROL         "/",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,107,182,18,
+                    10
+    PUSHBUTTON      "=",IDC_BUTTON1,194,67,27,14
+    PUSHBUTTON      "=",IDC_BUTTON3,196,160,28,13
+    EDITTEXT        IDC_EDIT7,230,60,53,33,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT8,230,107,55,31,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9,230,155,59,26,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10,113,24,28,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11,148,24,26,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT12,181,24,27,17,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT13,215,23,26,17,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "生成一组数字：",IDC_BUTTON4,45,27,57,14
+    PUSHBUTTON      "=",IDC_BUTTON2,194,113,29,14
+    PUSHBUTTON      "开始音乐",IDC_MUSICON,277,7,50,14
+    PUSHBUTTON      "关闭音乐",IDC_MUSICOFF,277,24,50,14
+    PUSHBUTTON      "游戏规则",IDC_RULE,277,40,50,14
+END
+
+IDD_GAMBLGAME_G1320218 DIALOG DISCARDABLE  0, 0, 305, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "掷骰子"
+FONT 15, "System"
+BEGIN
+    PUSHBUTTON      "退出游戏",IDCANCEL,108,143,50,14
+    EDITTEXT        IDC_NUM1,30,43,51,29,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM2,105,44,57,28,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM3,188,44,56,28,ES_AUTOHSCROLL
+    CONTROL         "大",IDC_OPERATOR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    88,117,24,10
+    CONTROL         "小",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,160,116,24,
+                    10
+    PUSHBUTTON      "开始",IDC_GOON,109,83,50,14
+    PUSHBUTTON      "开始音乐",IDC_MUSICON1,255,7,43,14
+    PUSHBUTTON      "关闭音乐",IDC_MUSICOFF1,255,22,43,14
+    PUSHBUTTON      "游戏规则",IDC_RULE,121,7,50,14
+END
+
+IDD_WINNER_G1320218 DIALOG DISCARDABLE  0, 0, 177, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "恭喜"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "再来一局",IDOK,56,73,50,14
+    CTEXT           "恭喜！您成功了！",IDC_STATIC,52,36,65,27,SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+END
+
+IDD_LOSER_G1320218 DIALOG DISCARDABLE  0, 0, 187, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "失败"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "再来一局",IDOK,64,105,50,14
+    CTEXT           "很遗憾，您输了。",IDC_STATIC,42,40,102,43,SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+END
+
+IDD_NOWINNER_G1320218 DIALOG DISCARDABLE  0, 0, 187, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "平局"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "再来一局",IDOK,68,140,50,14
+    CTEXT           "平分秋色！",IDC_STATIC,67,62,59,35,SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER
+END
+
+IDD_Math24_WrongDlg DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,75,50,14
+    LTEXT           "请输入正确的数字",IDC_STATIC,59,44,100,24
+END
+
+IDD_GAMBLERULE DIALOG DISCARDABLE  0, 0, 209, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏规则"
+FONT 12, "System"
+BEGIN
+    PUSHBUTTON      "返回游戏",IDCANCEL,81,127,50,14
+    LTEXT           "  首先请您选择下注大或小, 您押注的是三个骰子的数字总和。“大”是指数字总和为11 到17；“小” 是指数字总和为4到10，无论大小，骰子数目相同算输。",
+                    IDC_STATIC,52,46,105,61,SS_NOTIFY | SS_SUNKEN | 
+                    WS_BORDER
+END
+
+IDD_GUSEEGAMERULE DIALOG DISCARDABLE  0, 0, 187, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏规则"
+FONT 12, "System"
+BEGIN
+    PUSHBUTTON      "返回游戏",IDCANCEL,62,124,50,14
+    CTEXT           "  请您在你的出拳下写下您的出拳（剪刀、石头或布），点击开始游戏即可。",
+                    IDC_RULE,52,58,75,39,SS_NOTIFY | SS_SUNKEN | WS_BORDER
+END
+
+IDD_MATHRULE DIALOG DISCARDABLE  0, 0, 187, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"巧算24点游戏规则：您需要使用四个范围在1`13之间的数，通过四则混合运算计算结果出24。（给出的每个数字只能使用一遍，前两个式子计算中间结果，最后一个式子计算出您的最终结果。）"","
+
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "返回游戏",IDCANCEL,60,72,50,14
+    LTEXT           "巧算24点游戏规则：您需要使用四个范围在1`13之间的数，通过四则混合运算计算结果出24。（给出的每个数字只能使用一遍，前两个式子计算中间结果，最后一个式子计算出您的最终结果。）"",",
+                    IDC_STATIC,18,25,146,61
+END
+
+IDD_Password_Inconsistent DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDCANCEL,68,75,50,14
+    LTEXT           "两次密码输入不一致，请重新输入!",IDC_STATIC,31,44,134,
+                    24
+END
+
+IDD_REGISTER_SUCCESS DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register_Success"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,66,75,50,14
+    CTEXT           "注册成功！",IDC_STATIC,50,45,82,31
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "吉利 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "吉利\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2021\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "吉利.EXE\0"
+            VALUE "ProductName", "吉利 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_2_LOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_2_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_3_PLAYERLOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_3_WORKERLOGON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_ERROR1_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_ERROR2_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_MAINWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_GUESSGAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_MATHGAME_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_GAMBLGAME_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_WINNER_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_LOSER_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_NOWINNER_G1320218, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_Math24_WrongDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_GAMBLERULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_GUSEEGAMERULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_MATHRULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_Password_Inconsistent, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_REGISTER_SUCCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "res\\胡伟立 - 雪千寻.wav"
+IDR_WAVE5               WAVE    DISCARDABLE     "res\\卢冠廷 - 賭神.wav"
+IDR_WAVE6               WAVE    DISCARDABLE     "res\\却.wav"
+IDR_WAVE7               WAVE    DISCARDABLE     "res\\群星 - 东南大学校歌.wav"
+IDR_WAVE8               WAVE    DISCARDABLE     "res\\Taiky - 中国合伙人bgm（三个人酒席吵架）（翻自 金培达）.wav"
+IDR_WAVE9               WAVE    DISCARDABLE     "res\\商易,夏飞云,上海民族乐团 - 小刀会序曲.wav"
+IDR_WAVE10              WAVE    DISCARDABLE     "res\\武聆音雄 - 华山论剑--欢快版.wav"
+IDR_WAVE11              WAVE    DISCARDABLE     "res\\Yeegoo,柯雨 - 俠.wav"
+IDR_WAVE12              WAVE    DISCARDABLE     "res\\胡伟立 - 偷功.wav"
+IDR_WAVE13              WAVE    DISCARDABLE     "res\\空白名 - 云宫音.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\剪刀石头布.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 吉利(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\吉利.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
