@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="newtest2021">
+		<CBX_INST_ENTRY INSTANCE_NAME="|newtest2021|lpm_decode0:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_7uf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|newtest2021|lpm_mux0:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_8qc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

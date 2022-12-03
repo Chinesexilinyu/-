@@ -1,0 +1,886 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+10
+758
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+newtest2021
+# storage
+db|newtest2021.(0).cnf
+db|newtest2021.(0).cnf
+# case_insensitive
+# source_file
+newtest2021.bdf
+c8966998df7b4a6c56bc88a51b18e57e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux0
+# storage
+db|newtest2021.(1).cnf
+db|newtest2021.(1).cnf
+# case_insensitive
+# source_file
+lpm_mux0.tdf
+8d1e402fe166f1117cb4b7f2d5e2ffc
+7
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3x7
+-1
+3
+data3x6
+-1
+3
+data3x5
+-1
+3
+data3x4
+-1
+3
+data3x3
+-1
+3
+data3x2
+-1
+3
+data3x1
+-1
+3
+data3x0
+-1
+3
+data2x7
+-1
+3
+data2x6
+-1
+3
+data2x5
+-1
+3
+data2x4
+-1
+3
+data2x3
+-1
+3
+data2x2
+-1
+3
+data2x1
+-1
+3
+data2x0
+-1
+3
+data1x7
+-1
+3
+data1x6
+-1
+3
+data1x5
+-1
+3
+data1x4
+-1
+3
+data1x3
+-1
+3
+data1x2
+-1
+3
+data1x1
+-1
+3
+data1x0
+-1
+3
+data0x7
+-1
+3
+data0x6
+-1
+3
+data0x5
+-1
+3
+data0x4
+-1
+3
+data0x3
+-1
+3
+data0x2
+-1
+3
+data0x1
+-1
+3
+data0x0
+-1
+3
+}
+# include_file {
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+}
+# hierarchies {
+lpm_mux0:inst5
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux
+# storage
+db|newtest2021.(2).cnf
+db|newtest2021.(2).cnf
+# case_insensitive
+# source_file
+|91sp2_quartus_free|quartus|libraries|megafunctions|lpm_mux.tdf
+9d45665215a7636e457c26f5f1517
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+4
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+2
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_8qc
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3_7
+-1
+3
+data3_6
+-1
+3
+data3_5
+-1
+3
+data3_4
+-1
+3
+data3_3
+-1
+3
+data3_2
+-1
+3
+data3_1
+-1
+3
+data3_0
+-1
+3
+data2_7
+-1
+3
+data2_6
+-1
+3
+data2_5
+-1
+3
+data2_4
+-1
+3
+data2_3
+-1
+3
+data2_2
+-1
+3
+data2_1
+-1
+3
+data2_0
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+lpm_mux0:inst5|lpm_mux:lpm_mux_component
+}
+# macro_sequence
+
+# end
+# entity
+mux_8qc
+# storage
+db|newtest2021.(3).cnf
+db|newtest2021.(3).cnf
+# case_insensitive
+# source_file
+db|mux_8qc.tdf
+a46d1b5de4d57dbe397b8fc160eb3fc8
+7
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data31
+-1
+3
+data30
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+lpm_mux0:inst5|lpm_mux:lpm_mux_component|mux_8qc:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_dff0
+# storage
+db|newtest2021.(4).cnf
+db|newtest2021.(4).cnf
+# case_insensitive
+# source_file
+lpm_dff0.tdf
+bbdfc3d2b32970b63348e3451a9be85
+7
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# include_file {
+lpm_ff.inc
+5b1f18ec4f969a147b22e8c42bf962ac
+}
+# hierarchies {
+lpm_dff0:inst3
+lpm_dff0:inst2
+lpm_dff0:inst1
+lpm_dff0:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff
+# storage
+db|newtest2021.(5).cnf
+db|newtest2021.(5).cnf
+# case_insensitive
+# source_file
+|91sp2_quartus_free|quartus|libraries|megafunctions|lpm_ff.tdf
+6f1796a38d8b519cf7b8f38b5da1ac5b
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# hierarchies {
+lpm_dff0:inst3|lpm_ff:lpm_ff_component
+lpm_dff0:inst2|lpm_ff:lpm_ff_component
+lpm_dff0:inst1|lpm_ff:lpm_ff_component
+lpm_dff0:inst|lpm_ff:lpm_ff_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode0
+# storage
+db|newtest2021.(6).cnf
+db|newtest2021.(6).cnf
+# case_insensitive
+# source_file
+lpm_decode0.tdf
+a14e9d91a5ac2f7691a539e1b51ff9
+7
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+lpm_decode0:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|newtest2021.(7).cnf
+db|newtest2021.(7).cnf
+# case_insensitive
+# source_file
+|91sp2_quartus_free|quartus|libraries|megafunctions|lpm_decode.tdf
+801b50bb3ab97a9f41a27f6333e6c69e
+7
+# user_parameter {
+LPM_WIDTH
+2
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+4
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_7uf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+lpm_decode0:inst4|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+decode_7uf
+# storage
+db|newtest2021.(8).cnf
+db|newtest2021.(8).cnf
+# case_insensitive
+# source_file
+db|decode_7uf.tdf
+9289532571b16d8c6b856e885bd9bc19
+7
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+lpm_decode0:inst4|lpm_decode:lpm_decode_component|decode_7uf:auto_generated
+}
+# macro_sequence
+
+# end
+# complete
+
