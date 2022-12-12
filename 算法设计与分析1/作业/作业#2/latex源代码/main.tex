@@ -1,0 +1,166 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.0cm,bottom=2.5cm}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage[longend,ruled,linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{ctex}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+\title{
+{\heiti《算法分析与设计》第 {$2$} 次作业
+\footnote{
+
+}
+}
+}
+\date{}
+
+\author{
+姓名：\underline{}~~~~~~
+学号：\underline{}~~~~~~}
+
+\maketitle
+
+\noindent
+\section*{\heiti \color{red}{算法分析题}}
+\noindent
+{\bf 题目1：}求下列递推关系表示的算法复杂度
+\begin{enumerate}
+\item[(1)]  $T(n)$ = 9$T(n/3)$ + $n$
+\item[(2)] $T(n)$ = $n$ + $3T(\frac{n}{4})$
+\item[(3)] $T(n)$ = $4T(n/2)$ + $n^2\lg{n}$
+\end{enumerate}
+
+
+\noindent
+{\bf 答：}
+$$
+\begin{aligned}
+&\text { （1）}\\
+&T(n)=9 T\left(\frac{n}{3}\right)+n\\
+&=9\left[9 T\left(\frac{n}{3^2}\right)+\frac{n}{3} \right]+n\\
+&=9^2\left[9 T\left(\frac{n}{3^3}\right)+\frac{n}{3^2}\right]+3n+n\\
+&\text { 直到 } \frac{n}{3^x}=1 \text {, 此时 } x=\log _3 n\\
+&=n^2 T\left(1\right)+\frac{n^2-n}{2}\\
+&\text { 因此 } T(n)=O(n^2) \\
+&\text { （2）}\\
+&T(n)=3 T\left(\frac{n}{4}\right)+n\\
+&=3\left[3 T\left(\frac{n}{4^2}\right)+\frac{n}{4} \right]+n\\
+&=3^2\left[3 T\left(\frac{n}{4^3}\right)+\frac{n}{16}\right]+\frac{3n}{4}n+n\\
+&\text { 直到 } \frac{n}{4^m}=1 \text {, 此时 } m=\log _4 n\\
+&\text { 再由换底公式可知 } \\
+&=n^{\log_4{3}} T\left(1\right)+4n-4n^{\log_4{3}} \\
+&\text { 因为 } log_4{3}<1 \\
+&\text { 所以 } T(n)=O(n) \\
+&\text { （3）}\\
+&T(n)=4 T\left(\frac{n}{2}\right)+n^2\lg n\\
+&=4\left[4 T\left(\frac{n}{2^2}\right)+\frac{n^2}{2^2} \right]+n^2\lg n\\
+&=4^2\left[4 T\left(\frac{n}{2^3}\right)+\frac{n^2}{4^2}\right]+n^2\lg{\frac{n}{2}}+n^2\lg {n}\\
+&\text { 直到 } \frac{n}{2^m}=1 \text {, 此时 } m=\log _2 n\\
+&\text { 再由换底公式可知 } \\
+&=n^2 T\left(1\right)+O(n^2(lg n)^2)\\
+&\text { 因此 } T(n)=O(n^2(lg n)^2) \\
+\end{aligned}
+$$
+
+\noindent
+{\bf 题目2：}假设谷歌公司在过去$n$天中的股票价格记录在数组$A[1..n]$中，我们希望从中找出两天的价格，其价格增幅最大，即找到$A$[$i$]和$A$[$j$] $(i\leq j)$ 使得$M=A[j]-A[i]$的值最大，请设计一个时间复杂度不超过$O(n\lg{n}$)的分治算法
+
+
+\noindent
+{\bf 答：}
+根据题目，我设计了如下算法，主要函数为guge(int i,int j,int\&max,int\&min,int\&jie)
+这其中，max存贮数组最大位置，min存储数组最小位置，jie存储最大涨幅
+代码如下：
+void guge(int i, int j, int\& max, int\& min, int\& jie)  \\
+\{ \\
+	int lmax, lmin, rmax, rmin,m,ljie,rjie; \\
+	if (i == j) \\
+	\{ \\
+		max = min = i; \\
+		jie = 0; \\
+	\} \\ 
+	else \\ 
+	\{ \\ 
+		m = (i + j) / 2; \\
+		guge(i, m, lmax, lmin, ljie); \\
+		guge(m + 1, j, rmax, rmin, rjie); \\
+		max = max2(lmax, rmax); \\ 
+		min = min2(lmin, rmin);  \\ 
+		jie = max3(ljie, rjie, A[rmax] - A[lmin]); \\
+ 	\} \\
+\} \\
+其中的max3函数为求取三个数中的最大值，max2,min2函数分别为求取最大最小数值在A数组中的位置 (详细函数可以参考附件中的源代码)\\
+在该算法的情形下，将可能情况划分为以下三种：\\
+1.ljie即为所求解 \\
+2.rjie即为所求解 \\
+3.右面的最大减去左面的最下即为所求解 \\
+根据所求，可知该算法复杂度为：
+$$
+\begin{aligned}
+&T(n)=2T\left(\frac{n}{2}\right)+O(1)\\
+&\text { 结合上面刚做过的第一题，可以推得该算法的复杂度为：} \\ 
+&T(n)=O(n) \\
+\end{aligned}
+$$
+我们满足了题目的要求 \\
+\noindent
+\section*{\heiti \color{red}{算法实现题}}
+\vspace{10pt}
+\noindent
+{\bf 题目3：}问题描述：在与联盟的战斗中连续失败后，帝国撤退到最后一个据点。根据其强大的防御系统，帝国击退了联盟攻击的六波浪潮。经过几个不眠之夜，联盟将军亚瑟注意到防御系统的唯一弱点就是能源供应。该系统由N个核电站供电，其中任何一个都会使系统失效。
+
+这位将军很快就派N名特工进行突击，这些特工进入了据点。不幸的是，由于帝国空军的袭击，他们未能降落在预期位置。作为一名经验丰富的将军，亚瑟很快意识到他需要重新安排计划。他现在要知道的第一件事是哪个特工离任何一个核电站最近。你是否可以帮助将军计算特工与核电站之间的最小距离？
+
+
+
+\vspace{5pt}
+\noindent
+{\bf 答：}
+为了实现题目要求，我定义了一个结构体point，其中除了包含点坐标x,y之外，还定义了一个flag作为判断其是核电站还是特工。基本思想就是使用分治法解决平面上最近点对的问题，其中为了按照x排序设计了zcysort函数（利用了快排的思想）。\\
+算法通过分治将问题分成三种情况： \\
+1. 最近两点 (flag 不同) 在数组左边 \\
+2. 最近两点 (flag 不同) 在数组右边 \\
+3. 最近两点 (flag 不同) 一点在 mid 左侧 (包含 mid) 一点在 mid 右侧 \\
+该算法复杂度为：\\
+$$
+\begin{aligned} 
+&T(n)=O(n\lg{n}) \\
+\end{aligned}
+$$
+主体函数zcy如下:(其余请参考附件中的代码） \\
+double zcy(int begin, int end,point*p) \\
+\{\\
+    int mid = (begin + end) / 2;  \\
+    double left = 9999999, right = 9999999, inter = 9999999; \\
+
+    if (begin >= end) \\
+        return 9999999; \\ 
+    left = zcy(begin, mid,p);\\
+    right = zcy(mid + 1, end,p);\\
+    for (int i = begin; i <= mid; i++)\\
+    \{\\
+        for (int j = mid + 1; j <= end; j++)\\
+        \{\\
+            if (p[i].flag != p[j].flag)\\
+            \{\\
+                if (p[j].x - p[i].x > inter * 2)\\
+                    break;\\
+                double dis = sqrt((p[i].x - p[j].x) * (p[i].x - p[j].x) + (p[i].y - p[j].y) * (p[i].y - p[j].y));\\
+                if (dis < inter)\\
+                    inter = dis;\\
+            \}\\
+        \}\\
+    \}\\
+    return min(min(left, right), inter);\\
+\}\\
+\end{document}\
