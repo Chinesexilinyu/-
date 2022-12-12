@@ -1,0 +1,135 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.0cm,bottom=2.5cm}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage[longend,ruled,linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{ctex}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{booktabs}
+\makeatletter
+\DeclareRobustCommand{\bxz}{\ifmmode \mathbxz
+  \else
+    \leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{\bxzsymbol}%
+  \fi
+}
+\newcommand{\mathbxz}{\quad\hbox{\bxzsymbol}}
+\newenvironment{foo}[1][\fooname]{\par
+  \pushQED{\bxz}%
+  \normalfont \topsep6\p@\@plus6\p@\relax
+  \trivlist
+  \item[\hskip\labelsep
+        \itshape
+    #1\@addpunct{.}]\ignorespaces
+}{\popQED\endtrivlist\@endpefalse}
+\providecommand{\bxzsymbol}{\fbox{\footnotesize B.X.Z}}
+\providecommand{\fooname}{Foo}
+\makeatother
+\begin{document}
+
+
+\title{
+{\heiti《算法分析与设计》第 {$1$} 次作业
+\footnote{
+%要求：1、分析题请用书面化语言给出详细分析过程;~2、实现题请先写出算法思想，其次用伪代码描述，C++源码可以采用在线提交的方式，提交密码：seu711181，用户名最好统一使用学号-姓名的格式。
+}
+}
+}
+\date{}
+
+\author{
+姓名：\underline{}~~~~~~
+学号：\underline{}~~~~~~}
+
+\maketitle
+
+\noindent
+\section*{\heiti \color{red}{证明题}}
+\noindent
+{\bf 题目1：}证明下面五个关系式
+\begin{enumerate}
+\item[(1)] $O(f)+O(g)=O(f+g)$ 
+\item[(2)]$O(f) \cdot O(g)=O(f \cdot g)$
+\item[(3)]如果 $g(N)=O(f(N)) \Rightarrow O(f)+O(g)=O(f)$;
+\item[(4)]$O(c f(N))=O(f(N))$
+\item[(5)]$f=O(f)$
+\end{enumerate}
+
+\vspace{5pt}
+\noindent
+{\bf 证明：} \\
+\begin{proof}
+(1) \\
+设$F(N)=O(f)$ \\
+即：存在C1，N1为正整数，对于任意N大于等于N1，有F(N)小于等于C1f(N) \\
+同理，设$G(N)=O(g)$,存在C2，N2为正整数，对于任意N大于等于N2，有G(N)小于等于C2g(N) \\
+所以，令$C3=max{C1,C2}$ \\
+则有：$F(N)+G(N) \leq C3(f(N)+g(N))$ \\
+\end{foo}
+\begin{foo}
+$O(f)+O(g)=O(f+g)$
+\end{foo}
+This is the conclusion that we prove.
+\end{proof} 
+\begin{proof}
+(2)\\
+$O(f) \cdot O(g)=O(f \cdot g)$\\
+即：存在C1，N1为正整数，对于任意N大于等于N1，有F(N)小于等于C1f(N) \\
+同理，设$G(N)=O(g)$,存在C2，N2为正整数，对于任意N大于等于N2，有G(N)小于等于C2g(N) \\
+所以，$F(N) \cdot G(N) \leq C1 \cdot C2 \cdot f(N) \cdot g(N) \\ 
+$令C3=C1 \cdot C2$ \\
+即，$F(N) \cdot G(N) \leq C3  \cdot f(N) \cdot g(N)$\\
+\end{foo}
+\begin{foo}
+$O(f) \cdot O(g)=O(f \cdot g)$
+\end{foo}
+This is the conclusion that we prove.
+\end{proof}
+\begin{proof}
+(3) \\
+如果 $g(N)=O(f(N)) \Rightarrow O(f)+O(g)=O(f)$;
+因为，$g(N)=O(f(N))$ \\
+所以，存在C1，N1为正整数，对于任意N大于等于N1，有g(N)小于等于C1f(N) \\
+令G(N)=O(g) \\
+所以，存在C2，N2为正整数，对于任意N大于等于N2，有G(N)小于等于C2g(N)，也即小于等于C2C1f(N) \\
+所以，$O(f)+O(g) \leq g(N)+C2 \cdot g(N) \leq (C1+C2 \cdot C1)f(N) = O(f(N))$\\
+\end{foo}
+\begin{foo}
+如果 $g(N)=O(f(N)) \Rightarrow O(f)+O(g)=O(f)$;
+\end{foo}
+This is the conclusion that we prove.
+\end{proof}
+\begin{proof}
+(4) \\
+$O(c f(N))=O(f(N))$ \\
+$令O(c f(N))=F(N)$ \\
+所以，存在C1，N1为正整数，对于任意$N \leq N1$，有$F(N) \leq C1 \cnode C \cnode f(N) $\\
+令$C1\cnode C=C2>0$ \\
+所以$F(N) \leq C2 \cnode f(N) = O(f(N))$
+\end{foo}
+\begin{foo}
+$O(c f(N))=O(f(N))$
+\end{foo}
+This is the conclusion that we prove.
+\end{proof}
+\begin{proof}
+(5) \\
+$f=O(f)$ \\
+取C=2，则对任意$N\leq N1$ \\
+有,$0 \leq f(N) \leq 2 \cnode f(N)$
+\end{foo}
+\begin{foo}
+$f=O(f)$
+\end{foo}
+This is the conclusion that we prove.
+\end{proof}
+
+\end{document}\
