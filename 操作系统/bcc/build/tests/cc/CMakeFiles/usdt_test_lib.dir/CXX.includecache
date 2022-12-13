@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tests/python/include/folly/tracing/StaticTracepoint-ELFx86.h
+cstddef
+-
+
+../tests/python/include/folly/tracing/StaticTracepoint.h
+folly/tracing/StaticTracepoint-ELFx86.h
+-
+
+/home/seed/Desktop/bcc/tests/cc/usdt_test_lib.cc
+sys/types.h
+-
+unistd.h
+-
+folly/tracing/StaticTracepoint.h
+/home/seed/Desktop/bcc/tests/cc/folly/tracing/StaticTracepoint.h
+

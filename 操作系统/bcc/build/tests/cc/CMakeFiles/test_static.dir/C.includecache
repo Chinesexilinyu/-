@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/cc/bcc_common.h
+stdbool.h
+-
+stdint.h
+-
+stdlib.h
+-
+
+/home/seed/Desktop/bcc/tests/cc/test_static.c
+bcc_common.h
+/home/seed/Desktop/bcc/tests/cc/bcc_common.h
+
