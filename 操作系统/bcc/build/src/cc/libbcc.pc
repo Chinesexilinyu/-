@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+
+compatdir=${includedir}/bcc/compat
+
+Name: libbcc
+Version: EAD-HASH-NOTFOUND-GITDIR-N
+Description: BCC Program library
+Requires:
+Libs: -L${libdir} -lbcc
+Cflags: -I${includedir} -I${compatdir}
