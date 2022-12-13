@@ -1,0 +1,19 @@
+//aa.c
+
+void $ aa( )
+
+begin $
+
+/*hsahdkjashdjg*/
+
+float rate,circle;
+
+rate=3; $
+
+circle=3.14*rate*rate;
+
+end
+
+$
+
+@
