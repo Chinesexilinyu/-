@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="test2021">
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyan03:inst1|lpm_decode1:inst3|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyan03:inst1|lpm_mux1:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_5qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyan03:inst1|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_frg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyanALU:inst|Ipm_add_sub2:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_0qh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyan03:inst1|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_dra1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|test202101:inst4|lpm_mux0:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_8qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|lpm_counter0:inst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_66j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|shiyanALU:inst|lpm_mux0:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_8qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|shiyan04|test202101:inst4|lpm_decode0:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_7uf.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
