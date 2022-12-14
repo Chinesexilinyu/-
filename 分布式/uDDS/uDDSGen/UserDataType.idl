@@ -1,0 +1,6 @@
+struct  UserDataType
+{
+	short x;
+	long y;
+	string color;
+};

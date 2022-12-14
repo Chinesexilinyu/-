@@ -1,0 +1,6 @@
+struct AverageGrade{
+	float avgScore;
+	string ID1;
+	string ID2;
+	string ID3;
+};
