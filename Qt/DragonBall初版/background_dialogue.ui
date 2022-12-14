@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Background_Dialogue</class>
+ <widget class="QWidget" name="Background_Dialogue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>729</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>561</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="Hero_button">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>540</y>
+       <width>92</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择该人物</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="listView">
+     <property name="geometry">
+      <rect>
+       <x>-5</x>
+       <y>-9</y>
+       <width>561</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/6.jpg);</string>
+     </property>
+    </widget>
+    <zorder>listView</zorder>
+    <zorder>Hero_button</zorder>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <widget class="QPushButton" name="Hero_button2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>540</y>
+       <width>92</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择该人物</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="listView_3">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-20</y>
+       <width>551</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/2.jpg);</string>
+     </property>
+    </widget>
+    <zorder>listView_3</zorder>
+    <zorder>Hero_button2</zorder>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="Choose_button">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>280</y>
+     <width>92</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>切换角色</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>0</y>
+     <width>161</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+  </widget>
+  <zorder>listView_2</zorder>
+  <zorder>stackedWidget</zorder>
+  <zorder>Choose_button</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
