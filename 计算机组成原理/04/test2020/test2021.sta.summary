@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CP'
+Slack : -6.801
+TNS   : -247.828
+
+Type  : Slow 1200mV 85C Model Setup 'ALU_Z_latch'
+Slack : -6.172
+TNS   : -46.350
+
+Type  : Slow 1200mV 85C Model Setup 'ALU_A_latch'
+Slack : -3.078
+TNS   : -21.768
+
+Type  : Slow 1200mV 85C Model Hold 'CP'
+Slack : 0.667
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ALU_A_latch'
+Slack : 1.279
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ALU_Z_latch'
+Slack : 1.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CP'
+Slack : -3.201
+TNS   : -75.284
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ALU_A_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ALU_Z_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'shiyan03_gate'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'CP'
+Slack : -6.285
+TNS   : -227.233
+
+Type  : Slow 1200mV 0C Model Setup 'ALU_Z_latch'
+Slack : -5.752
+TNS   : -43.173
+
+Type  : Slow 1200mV 0C Model Setup 'ALU_A_latch'
+Slack : -2.889
+TNS   : -20.296
+
+Type  : Slow 1200mV 0C Model Hold 'CP'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ALU_A_latch'
+Slack : 1.211
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ALU_Z_latch'
+Slack : 1.609
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CP'
+Slack : -3.201
+TNS   : -75.284
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ALU_A_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ALU_Z_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'shiyan03_gate'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'CP'
+Slack : -2.173
+TNS   : -76.537
+
+Type  : Fast 1200mV 0C Model Setup 'ALU_Z_latch'
+Slack : -2.057
+TNS   : -14.725
+
+Type  : Fast 1200mV 0C Model Setup 'ALU_A_latch'
+Slack : -0.673
+TNS   : -4.241
+
+Type  : Fast 1200mV 0C Model Hold 'CP'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ALU_A_latch'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ALU_Z_latch'
+Slack : 0.663
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CP'
+Slack : -3.000
+TNS   : -49.789
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ALU_A_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ALU_Z_latch'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'shiyan03_gate'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

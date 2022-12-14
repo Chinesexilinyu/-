@@ -1,0 +1,26 @@
+MED
+E:\91sp2_quartus_free\quartus\test2020\shiyan0301.mif
+
+	Undo Commands
+	     1.	Custom Fill Cells
+
+
+GED
+
+	Undo Commands
+	     1.	Insert Node
+	     2.	Move
+	     3.	Properties
+	     4.	Move
+	     5.	Move
+	     6.	Move
+	     7.	Move
+	     8.	Insert Symbol
+	     9.	Move
+	    10.	Move
+	    11.	Insert Symbol
+	    12.	Move
+	    13.	Move
+	    14.	Move
+
+
