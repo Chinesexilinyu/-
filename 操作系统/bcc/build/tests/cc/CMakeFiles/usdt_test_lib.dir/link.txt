@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wall  -Wno-unused-result -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libusdt_test_lib.so -o libusdt_test_lib.so CMakeFiles/usdt_test_lib.dir/usdt_test_lib.cc.o 

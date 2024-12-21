@@ -1,6 +1,0 @@
-file(GLOB C_FILES *.c)
-file(GLOB PY_FILES *.py)
-file(GLOB TXT_FILES *.txt)
-install(PROGRAMS ${PY_FILES} DESTINATION share/bcc/examples/tracing)
-install(FILES ${C_FILES} DESTINATION share/bcc/examples/tracing)
-install(FILES ${TXT_FILES} DESTINATION share/bcc/examples/tracing)

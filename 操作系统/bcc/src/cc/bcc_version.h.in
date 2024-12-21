@@ -1,6 +1,0 @@
-#ifndef LIBBCC_VERSION_H
-#define LIBBCC_VERSION_H
-
-#define LIBBCC_VERSION "@REVISION@"
-
-#endif
